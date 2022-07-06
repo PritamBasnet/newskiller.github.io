@@ -1,0 +1,739 @@
+/* google font importing */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Quicksand:wght@400;500&display=swap');
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #0093E9;
+    background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%); */
+}
+
+/* Let Define the variable of css */
+:root {
+    --background: #80D0C7;
+    --tint: #d9f1ee;
+    --black: #0d1514;
+    --hover: #0093E9;
+
+}
+
+/* Let style the Header Section */
+.Header {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+}
+
+.Nav-List {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    align-items: center;
+}
+
+.List-1 {
+    display: flex;
+}
+
+.Nav-Item {
+    padding: 10px 18px;
+}
+
+.Logo-Item {
+    width: 65%;
+}
+
+.Header-Logo {
+    height: 35px;
+    width: 45px;
+    background-position: center;
+    background-size: cover;
+}
+
+.Headign-Logo {
+    transform: translateY(-10px);
+    display: inline-block;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 550;
+}
+
+.Headign-Logo:hover {
+    color: none !important;
+}
+
+.Nav-Link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: var(--black);
+    transition: 0.3s linear;
+}
+
+.Nav-Link:hover {
+    color: var(--hover);
+}
+
+.Profile-Item {
+    float: right;
+}
+
+.outline_user {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--black);
+}
+.Profile-Card
+{
+    height: 400px;
+    width: 380px;
+    position: absolute;
+    right: 2px;
+    background-color: white;
+    z-index: 4;
+    transform: translateY(20px);
+    /* border: 1px solid var(--background); */
+    display: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.Profile-Card2
+{
+    height: 400px;
+    width: 380px;
+    position: absolute;
+    background-color: white;
+
+}
+.Card-Image
+{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.red{
+    color: red !important;
+}
+.img
+{
+    object-position: center;
+    object-fit: cover;
+}
+.Profile-Heading
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 15px;
+}
+.Profile-Info
+{
+    font-size: 0.8rem;
+    display: block;
+    text-align: center;
+    color: var(--hover);
+}
+.Profile-Row
+{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 35px;
+}
+.Part-Heading
+{
+    font-size: 0.9rem;
+    display: block;
+    text-align: center;
+}
+.Part-Number{
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+.Profile-Para
+{
+    text-align: center;
+    font-size: 0.7rem;
+    padding-top: 25px;
+}
+.Social-Collector
+{
+    height: fit-content;
+    width: fit-content;
+    margin:auto;
+    padding-top: 25px;
+    display: flex;
+    column-gap: 10px;
+}
+.Icon-Circle
+{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    color: white;
+    font-size: 0.7rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--background);
+}
+
+/* Let style the main section */
+.Main-Section {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.Main-Container {
+    width: 98%;
+    height: fit-content;
+    padding-bottom: 80px;
+    background-color: #0093E9;
+    background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
+    margin: auto;
+    border-radius: 30px 30px 290px 30px;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-2-col {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+.Wrapper-Work{
+    display: flex;
+    width: 100%;
+}
+.Wrapper-Work > div{
+    width: 100%;
+}
+
+.Main-Image {
+    position: relative;
+    transform: translateY(20px);
+}
+
+.Main-Content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.Main-Heading {
+    font-size: 3rem;
+    color: var(--tint);
+    padding-top: 60px;
+    padding-left: 35px;
+}
+
+.Main-Para {
+    padding-left: 35px;
+    padding-top: 20px;
+    color: var(--tint);
+    font-size: 0.9rem;
+}
+
+.Main-Buttons {
+    padding-left: 35px;
+    padding-top: 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.Main-Buttons>a {
+    text-decoration: none;
+    color: white;
+    height: 45px;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 3px;
+}
+
+.Button-One {
+    transition: 0.3s linear;
+    background-color: var(--background);
+}
+
+.Button-Two {
+    border: 1px solid white;
+    transition: 0.3s linear;
+}
+
+.Button-One:hover {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.Button-Two:hover {
+    background-color: var(--background);
+    border: none;
+}
+
+/* Let us style the section Work */
+.Section-Work {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.Making-Auto {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+.Work-Heading {
+    font-size: 2.5rem;
+    text-align: center;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.Work-Heading::after {
+    height: 1.5px;
+    content: "";
+    display: block;
+    width: 15%;
+    background-color: var(--background);
+    margin: auto;
+}
+
+.work-row {
+    padding: 20px 0;
+    width: 80%;
+    margin: auto;
+}
+
+.grid-3-col {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.Work-Circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(135deg, #8EC5FC 0%, #E0C3FC 100%);
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+
+.Circle-Wrapper {
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid black; */
+}
+
+.Work-Heading {
+    text-align: center;
+}
+
+.Wrapper-Heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.Wrapper-Para {
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    color: var(--black);
+    transition: 0.3s linear;
+}
+
+.Wrapper-Para:hover {
+    color: var(--hover);
+}
+
+/* let style the Section-LatestWork */
+.Section-LatestWork {
+    width: 100%;
+    padding: 40px;
+    background-color: var(--tint);
+}
+
+.latestRow {
+    padding: 50px 0;
+    width: 75%;
+    margin: auto;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 60px;
+
+}
+
+.LatestWork-background {
+    border-radius: 0px 60px 60px 0px;
+    background-color: #0093E9;
+    background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
+    display: grid;
+    place-items: center; 
+    height: 430px;
+}
+
+.background-wrapper {
+    height: 90%;
+    width: 90%;
+}
+
+.LatestWork-Content {
+    background-color: white;
+    height: 430px;
+    border-radius: 60px 0 0 60px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+
+}
+
+.LatestWork-Heading {
+    font-size: 2rem;
+}
+
+.LatestWork-para {
+    color: var(--hover);
+    font-size: 0.9rem;
+    padding-top: 15px;
+}
+.Absolute-Wrappeer
+{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    place-items: center;
+}
+
+
+.LatestWork-Btn {
+    height: 45px;
+    width: 170px;
+    background-color: #0093E9;
+    background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
+    position: relative;
+    /* left: 30%; */
+    border: none;
+    margin-top: 20px;
+    border-radius: 20px 0px 20px 20px;
+    /* color: var(--tint); */
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    color: white;
+}
+/* Let us style the FreeLancing-Section */
+.FreeLancing-Section
+{
+    width: 100%;
+    padding: 60px 0;
+    /* background: transparent; */
+
+}
+.Freelancing-Row
+{
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    background: url(../image/freelancing.jpg)  fixed no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.Overlay
+{
+    height: 100%;
+    width: 100%;
+    /* background-color: var(--hover); */
+    opacity: 0.7;
+    position: absolute;
+}
+.FreeLancing-Para
+{
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    z-index: 2;
+    /* position: relative; */
+    transform: translateY(-20px);
+    position: absolute;
+}
+.FreeLancing-Btn
+{
+    position: absolute;
+    height: 45px;
+    border: none;
+    color: white;
+    width: 180px;
+    transform: translateY(50px);
+    display: inline-block;
+    background-color: var(--hover);
+    transition: 0.3s linear;
+    border-radius: 20px 0px 20px 20px;
+}
+.FreeLancing-Btn:hover{
+    background-color: var(--background);
+}
+/* Styling for the side bar */
+.sidebar
+{
+    width: 380px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    transform: translateX(-380px);
+    transition: 0.3s linear;
+}
+.sibebar-active
+{
+    left: 0;
+    transform: translateX(0px);
+}
+.Sidebar-1
+{
+    height: 0%;
+    width: 100%;
+    background-color: var(--background);
+    position: absolute;
+    transition: 0.3s linear;
+    top: 0;
+    left: 0;
+}
+.Sidebar-2
+{
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--background);
+    transition: 0.3s linear;
+}
+.sibebar-active .Sidebar-1{
+    height: 50%;
+}
+.sibebar-active .Sidebar-2{
+    height: 50%;
+}
+.sidebar-list{
+    z-index: 10000;
+    position: absolute;
+    right: 45%;
+    top: 20%;
+    list-style: none;
+    opacity: 0;
+}
+.sidebar-item
+{
+    padding: 18px 0;
+}
+.sidebar-link
+{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: var(--black);
+    transition: 0.3s linear;
+    text-transform: capitalize;
+}
+.sidebar-link:hover
+{
+    color: var(--hover);
+}
+.sidebar-item
+{
+    transform: translateX(0px);
+    transition: 0.3s linear;
+}
+.list-activated
+{
+    opacity: 1;
+}
+/* .list-activated > .sidebar-item
+{
+    animation: move 1s 1 ease;
+
+} */
+.list-activated > .sidebar-item
+{
+    transform: translateX(10px);
+}
+@keyframes move {
+    0%
+    {
+        transform: translateX(-10px);
+    }
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
+.maintain-card
+{
+    display: none;
+    right: -188px;
+    top: 46px;
+}
+.Ham-Burger
+{
+    height: 40px;
+    width: 35px;
+    /* background-color: var(--background); */
+    position: fixed;
+    top: 35px;
+    right: 20px;
+    display: grid;
+    place-items: center;
+    display: none;
+}
+.Ham-Burger > span
+{
+    display: inline-block;
+    height: 1px;
+    position: absolute;
+    width: 25px;
+    background-color: var(--black);
+    display: grid;
+    place-items: center;
+    transition: 0.3s linear;
+}
+.Line1
+{
+    transform: translateY(-8px);
+}
+.Line3
+{
+    transform: translateY(8px);
+}
+.ham-active .Line1
+{
+    transform: rotate(45deg);
+}
+.ham-active .Line2
+{
+    display: none;
+}
+.ham-active .Line3
+{
+    transform: rotate(-45deg);
+}
+/* Let make the site responsive */
+@media screen and (max-width:904px)
+{
+    .Main-Section
+    {
+        margin: auto;
+    }
+    .grid-2-col
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Main-Heading
+    {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:700px) 
+{
+    .Main-Buttons
+    {
+        flex-direction: column;
+    }
+    .collapse
+    {
+        display: none;
+    }
+    .Ham-Burger{
+        display: block;
+    }
+}
+@media screen and (max-width:1024px) 
+{
+    .grid-3-col
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .Wrapper-Work
+    {
+        flex-direction: column;
+    }
+    .LatestWork-Content
+    {
+        border-radius: 60px 60px 0px 0px;
+    }
+    .LatestWork-background
+    {
+        margin-bottom: 20px;
+        border-radius: 0px 0px 60px 60px;
+    }
+}
+@media screen and (max-width:1060px)
+{
+    .collapse{
+        display: none;
+    }
+}
+@media screen and (max-width:1224px)
+{
+    .Logo-Item
+    {
+        width: 60%;
+    }
+}
+@media screen and (max-width:700px) 
+{
+    .grid-3-col
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .LatestWork-Heading
+    {
+        font-size: 1.3rem;
+    }
+    .LatestWork-para
+    {
+        font-size: 0.7rem;
+    }
+}
+.Profile_active
+{
+    display: block;
+    animation: profile 0.2s 1 ease;
+}
+@keyframes profile{
+    0%
+    {
+        transform: scale(0);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
